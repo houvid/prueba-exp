@@ -36,3 +36,53 @@
     transform: rotate(360deg);
   }
 }
+
+input[type=text] {
+  
+  width: 90%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 24px;
+  background-color: white;
+  background-image: url('assets/search.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 50px;
+  float:center;
+}
+.inputSearch{
+
+padding-left: 0%;
+width: 50%;
+margin-top: 4%;
+margin-bottom: 4%;
+
+}
+.topnav {
+  display: flex;
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  height: 80px;
+}
+.text-sesion{
+  display: block;
+  font-size: 17px;
+  margin-bottom: 4%;
+}
+.car-container {
+  padding-left: 0%;
+  width: 30%;
+
+}
+.sesion{
+  width: 20%;
+}
+.user {
+  margin-top: 5%;
+  margin-bottom: 1%;
+  width: 30px;
+  height: 30px;
+}

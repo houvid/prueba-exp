@@ -1,0 +1,66 @@
+.grid{
+    width: 100%;
+    display: grid;
+    gap: 1.6 em;
+    grid-template-columns:repeat(6,1fr) ;
+}
+
+.banner{
+    grid-column: 1/7;
+    width: 100%;
+
+}
+.banner-mobile {
+    display: none;
+}
+.img {
+    margin: 0;
+    width: 100%;
+
+}
+
+.banner-secundary {
+    padding : 2.5%;
+
+    grid-column: span 3;
+    width: 95%;
+
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
+    grid-column: 1/7;
+
+}
+.footer-item {
+    background-color: black;
+    width: 30%;
+    grid-column: span 2;
+    color: blanchedalmond;
+}
+.productosPop {
+    grid-column: 1/7;
+    width: 100%;
+
+}
+@media (max-width: 648px) {
+    .banner-mobile{
+        grid-column: 1/7;
+        display: inline;
+        width: 100%;
+    }
+    .banner {
+        display: none;
+
+    }
+    .banner-secundary {
+        padding: 2.5%;
+
+        grid-column: span 7;
+        width: 95%;
+
+    }
+}

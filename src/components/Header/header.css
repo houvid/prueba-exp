@@ -60,7 +60,12 @@
       display:inline-block;
 }
 
-
+a{
+    color:#fff;
+}
+a:visited {
+    color: #fff;
+}
 .option :hover {
     color: rgb(104, 104, 104);
 }

@@ -28,22 +28,41 @@
 }
 
 footer {
+    
     text-align: center;
     padding: 3px;
-    background-color: DarkSalmon;
+    background-color: #000000;
     color: white;
     grid-column: 1/7;
+    table-layout: fixed;
+    display: table;
 
 }
+
+
 .footer-item {
-    background-color: black;
-    width: 30%;
-    grid-column: span 2;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+    display: table-cell;
+    width: 33%;
     color: blanchedalmond;
 }
 .productosPop {
     grid-column: 1/7;
     width: 100%;
+
+}
+.car-container {
+    padding-left: 0%;
+    width: 10%;
+
+}
+.redes{
+    fill: #fff ;
+    padding-left: 1%;
+    width: 50px;
+    height: 50px;
 
 }
 @media (max-width: 648px) {
@@ -62,5 +81,14 @@ footer {
         grid-column: span 7;
         width: 95%;
 
+    }
+    .footer-item {
+        padding-top: 3%;
+        padding-bottom: 3%;
+        text-align: center;
+        grid-column: 1/7;
+        display:list-item;
+        width: 90%;
+        color: blanchedalmond;
     }
 }

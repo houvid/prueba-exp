@@ -20,19 +20,23 @@ export default function ListOfProduct({ product }){
         return  <i> cargando </i>
     }
     
-    return <div className='ListOfProducts'>
-    {
-        products.map(({id,title,thumbnail,price}) =>
-        <Product
-        id={id}
-        key={id}
-        title ={title}
-        thumbnail = {thumbnail}
-        price={price}
-        />
-    )
-    }
-    </div>
+    return (
+      <div className="ListOfProducts">
+        {products.map(
+          ({ id, title, thumbnail, price, permalink, state_name }) => (
+            <Product
+              id={id}
+              key={id}
+              title={title}
+              thumbnail={thumbnail}
+              price={price}
+              permalink={permalink}
+              state_name={state_name}
+            />
+          )
+        )}
+      </div>
+    );
 
 
 }

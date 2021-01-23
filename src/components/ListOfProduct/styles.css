@@ -29,3 +29,8 @@
         --results-columns: 4;
     }
 }
+@media screen and (min-width: 1200px) {
+    :root {
+        --results-columns: 6;
+    }
+}

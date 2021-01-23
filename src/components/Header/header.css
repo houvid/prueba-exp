@@ -4,6 +4,9 @@
 a:visited {
     color: #ffffff;
 }
+a{
+    color: #ffffff;
+}
 .header {
     display: flex;
     width: 100%;
@@ -128,7 +131,6 @@ a:visited {
         background-image: url('../../assets/search.png');
         background-position-y: center;
         background-position-x: center;
-        
         padding: 12px 20px 12px 40px;
         transition: width 0.4s ease-in-out;
     }

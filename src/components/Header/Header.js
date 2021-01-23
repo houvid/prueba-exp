@@ -38,7 +38,6 @@ const Header = () => {
         </div>
 
         <ul className={click ? "nav-options active" : "nav-options"}>
-          
           <div className="inputSearch-mobile">
             <form onSubmit={handleSubmit}>
               <input

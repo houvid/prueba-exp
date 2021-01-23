@@ -51,9 +51,9 @@
     display: none;
 }
 .option {
+      color: #eeeeee;
       width: 10%;
       display: block;
-      color: #eeeeee;
       text-align: center;
       text-decoration: none;
       font-size: 17px;
@@ -61,10 +61,11 @@
 }
 
 a{
-    color:#fff;
+    color: rgb(251, 251, 251);
 }
-a:visited {
-    color: #fff;
+a:visited a:link,
+a:active {
+     text-decoration:none;
 }
 .option :hover {
     color: rgb(104, 104, 104);

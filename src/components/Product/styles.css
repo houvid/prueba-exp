@@ -3,9 +3,9 @@
     padding:0;
     text-decoration: none;
 }
-a:link {
+a:link.products {
     text-decoration: none;
-   color: black;
+    color: black; 
 }
 
 a:visited.products {
@@ -52,7 +52,6 @@ img {
     background-color: #4CAF50;
     /* Green */
     border: none;
-    
     color: white;
     padding: 10px 10px;
     text-align: center;

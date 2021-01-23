@@ -1,6 +1,6 @@
 {
-  "short_name": "ClothesStore",
-  "name": "ClothesStore",
+  "short_name": "Clothes Store",
+  "name": "Clothes Store",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "experimentalitycerebro.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "experimentalitycerebro.png",
       "type": "image/png",
       "sizes": "512x512"
     }
@@ -22,4 +22,5 @@
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
+
 }

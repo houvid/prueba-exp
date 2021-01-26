@@ -26,21 +26,3 @@ export default function getProducts({ keyword = 'moto'}={}) {
     })
 
 }
-
-
-function getImg(id) {
-  fetch(`https://api.mercadolibre.com/items/${id}`)
-    .then((res) => {
-      return res.json();
-    })
-    .then((item) => {
-      const { pictures = [] } = item;
-      if (Array.isArray(pictures)) {
-        const imagenes = pictures.map((imagen) => {
-          const { url } = imagen;
-          return url
-        })
-        return imagenes[0]
-      }
-    });
-  }

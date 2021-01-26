@@ -1,10 +1,14 @@
 import React from 'react'
-import { Link } from 'wouter'
 import './styles.css'
 export default function Product({ title, thumbnail, price, id, permalink, state_name }) {
   return (
     <div className="card">
-      <a href={permalink} target="_blank" className="products">
+      <a
+        href={permalink}
+        target="_blank"
+        rel=" noreferrer"
+        className="products"
+      >
         <img src={thumbnail} alt={id} title={title} />
         <br />
         <span className="text-product">
@@ -19,16 +23,13 @@ export default function Product({ title, thumbnail, price, id, permalink, state_
 
       <a
         href={`https://tucarro.santanderconsumer.co/landing/?idvehiculo=${id}`}
+        rel="noreferrer"
         target="_blank"
         title="Simular crédito"
       >
         <button className="button button3">Credito</button>
       </a>
-      <a
-        href={permalink}
-        target="_blank"
-        title="Simular crédito"
-      >
+      <a href={permalink} rel="noreferrer" target="_blank" title="Ir a página">
         <button className="button button4">Comprar</button>
       </a>
     </div>

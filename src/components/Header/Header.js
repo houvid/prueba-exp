@@ -10,7 +10,7 @@ const Header = () => {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
   const [keyword, setKeyword] = useState("");
-  const [path, pushLocation] = useLocation(); // e
+  const [path, pushLocation] = useLocation();
   const handleSubmit = (evt) => {
     evt.preventDefault();
     closeMobileMenu();
@@ -46,7 +46,7 @@ const Header = () => {
                 valor={keyword}
                 placeholder="Buscar aquí producto"
               ></input>
-            </form>
+            </form> 
           </div>
         
           <li className="option" onClick={closeMobileMenu}>

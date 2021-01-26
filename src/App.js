@@ -47,7 +47,7 @@ function App() {
           <label className="text-sesion">Iniciar sesión</label>
         </div>
       </div>
-      <Header/>
+      <Header />
 
       <section className="App-content">
         <Route path="/search/:keyword" component={SearchResults} />

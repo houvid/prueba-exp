@@ -11,11 +11,36 @@ export default function getProducts({ keyword = 'moto'}={}) {
               const { title, price, id, permalink } = product;
               const {thumbnail} = product
               const { state_name } = product.address;
-            return { title, price, thumbnail, id, permalink, state_name };
+            return {
+              title,
+              price,
+              thumbnail,
+              id,
+              permalink,
+              state_name
+            };
           }
-            )
+          )
           return products
       }
     })
 
 }
+
+
+function getImg(id) {
+  fetch(`https://api.mercadolibre.com/items/${id}`)
+    .then((res) => {
+      return res.json();
+    })
+    .then((item) => {
+      const { pictures = [] } = item;
+      if (Array.isArray(pictures)) {
+        const imagenes = pictures.map((imagen) => {
+          const { url } = imagen;
+          return url
+        })
+        return imagenes[0]
+      }
+    });
+  }
